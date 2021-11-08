@@ -18,7 +18,7 @@ jobs:
           command: |
             npm run frontend:install
       - node/install-packages:
-          app-dir: udagram-backend
+          app-dir: ~/app/udagram-backend
       - run:
           name: Front-End Build
           command: |
