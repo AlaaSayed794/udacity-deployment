@@ -13,12 +13,14 @@ jobs:
       - node/install
       - checkout
       - aws-cli/setup
+      - checkout:
+          path: ~/udagram
       - run:
           name: Front-End Install
           command: |
             npm run frontend:install
       - node/install-packages:
-          app-dir: ~/app/udagram-backend
+          app-dir: ~/udagram/udagram-backend
       - run:
           name: Front-End Build
           command: |
