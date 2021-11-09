@@ -30,6 +30,10 @@ The project can run but is missing some information to connect to the database a
 
 Provision the necessary AWS services needed for running the application:
 
+### circle ci pipeline status
+[![<ORG_NAME>](https://circleci.com/gh/AlaaSayed794/udacity-deployment.svg?style=svg)](<LINK>)
+
+
 1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
 1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
 1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.

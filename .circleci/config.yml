@@ -5,6 +5,15 @@ orbs:
   #used this reference https://circleci.com/developer/orbs/orb/circleci/aws-elastic-beanstalk#jobs-deploy
   eb: circleci/aws-elastic-beanstalk@1.0.0
 
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+
 jobs:
   build:
     docker:
